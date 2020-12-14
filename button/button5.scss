@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+// colors
+$default: #f5f6fa;
+$primary: #ff6348;
+$secondary: #2980b9;
+$info: #25CCF7;
+$success: #3ae374;
+$warning: #ffa502;
+$danger: #ff4d4d;
+$dark: #2C3A47;
+
+// mixin for buttons type
+@mixin btn-type($type, $shadow-color: darken($type, 10%), $color: white) {
+  background-color: $type;
+  color: $color;
+  box-shadow: 0 9px 0 $shadow-color, 0 9px 25px rgba(0,0,0,.7);
+
+  &:active {
+    position: relative;
+    top: 6px;
+    box-shadow: 0 3px 0 $shadow-color, 0 3px 6px rgba(0,0,0,.7);
+  }
+}
+
+// button
+.btn-3d {
+  font-family: 'yanone kaffeesatz';
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding: .2em .3em;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 180px;
+  margin-bottom: 9px;
+
+  @include btn-type($default, darken($default, 5%), $dark);
+}
+
+.btn-3d_primary {
+  @include btn-type($primary);
+}
+
+.btn-3d_secondary {
+  @include btn-type($secondary);
+}
+
+.btn-3d_info {
+  @include btn-type($info);
+}
+
+.btn-3d_success {
+  @include btn-type($success);
+}
+
+.btn-3d_warning {
+  @include btn-type($warning);
+}
+
+.btn-3d_danger {
+  @include btn-type($danger);
+}
+
+.btn-3d_dark {
+  @include btn-type($dark);
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 100px;
+
+  .btn-3d {
+    margin: 40px;
+  }
+}

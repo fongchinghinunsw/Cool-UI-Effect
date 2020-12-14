@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 360px;
+}
+
+.btn {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  /*
+    uncomment this line you'll see cool stuff (basically the semi-circle break out of the button
+    overflow specifies what should happen if content overflows an element's box.
+  */
+  overflow: hidden;
+}
+
+.btn1, .btn2 {
+  color: #3498db;
+}
+
+.btn3, .btn4 {
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  /* The element is positioned relative to its first positioned (not static) ancestor element, that is .btn, and that's why btn need to have position: relaive */
+  position: absolute;
+  left: 0;
+  /* takes full width of its nearest ancestor that's not static */
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before, .btn3::before {
+  /* the content's base is gonna stick to the top */
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn2::before, .btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before, .btn2:hover::before {
+  /* specifies how far the content is gonna overflow */
+  height: 180%
+}
+
+.btn3::before, .btn4::before {
+  height: 180%
+}
+
+.btn3:hover::before, .btn4:hover::before {
+  height: 0%
+}

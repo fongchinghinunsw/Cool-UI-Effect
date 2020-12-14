@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*
+    translate() moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+    
+    This is to make the center of the element to line up with the center of its parent.
+    it basically means move me leftwards by 50% of my width, along the x-axis, and move me upwards by 50% of my height, along the y-axis
+    This effectively moves the center of the element to its original top left corner. Remember than when you set left: 50%; top 50% on the element, you are moving its top left corner to the center of its parent (which means it is not visually centered at all). By moving the element back leftwards and upwards by half of its width and height respectively, you sure that its center now aligns with the parent's center, making it visually horizontally + vertically centered.
+
+  */
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  padding: 40px;
+  font-size: 35px;
+  color: #15f4ee;
+  font-family: poppins;
+  font-weight: 400;
+  border: 5px solid #15f4ee;
+  text-transform: uppercase;
+  /* add spaces between letters */
+  letter-spacing: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.5s;
+}
+
+.button:hover {
+  /*
+    1st attr moves the shadow right
+    2nd attr moves the shadow downward
+    3rd attr add blur effect
+    4th attr changes the spread of the shadow
+    5th attr is the color
+    inset moves the shadow inside the element
+
+    here we add 4 different shadows, 2 groups of identical makes the shadow
+    heavier.
+  */
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}

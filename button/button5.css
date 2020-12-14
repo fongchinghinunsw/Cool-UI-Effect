@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+.btn-3d {
+	font-family: 'yanone kaffeesatz';
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+	padding: .2em .3em;
+	border: none;
+	border-radius: 8px;
+	text-decoration: none;
+	display: inline-block;
+	min-width: 180px;
+	margin-bottom: 9px;
+	background-color: #f5f6fa;
+	color: #2C3A47;
+	box-shadow: 0 9px 0 #e4e7f2, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #e4e7f2, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_primary {
+	background-color: #ff6348;
+	color: white;
+	box-shadow: 0 9px 0 #ff3815, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_primary:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #ff3815, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_secondary {
+	background-color: #2980b9;
+	color: white;
+	box-shadow: 0 9px 0 #20638f, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_secondary:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #20638f, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_info {
+	background-color: #25CCF7;
+	color: white;
+	box-shadow: 0 9px 0 #08b4e1, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_info:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #08b4e1, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_success {
+	background-color: #3ae374;
+	color: white;
+	box-shadow: 0 9px 0 #1dcd59, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_success:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #1dcd59, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_warning {
+	background-color: #ffa502;
+	color: white;
+	box-shadow: 0 9px 0 #ce8500, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_warning:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #ce8500, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_danger {
+	background-color: #ff4d4d;
+	color: white;
+	box-shadow: 0 9px 0 #ff1a1a, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_danger:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #ff1a1a, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_dark {
+	background-color: #2C3A47;
+	color: white;
+	box-shadow: 0 9px 0 #182028, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.btn-3d_dark:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0 3px 0 #182028, 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.btn-container {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.btn-container .btn-3d {
+	margin: 40px;
+}
